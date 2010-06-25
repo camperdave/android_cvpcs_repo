@@ -9,7 +9,7 @@
   <default revision="froyo"
            remote="korg" />
 
-  <project path="build" name="cvpcs/android_build" remote="github">
+  <project path="build" name="cvpcs/android_build" revision="froyo-sapphire" remote="github">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -21,8 +21,9 @@
 
   <project path="cts" name="platform/cts" remote="korg"/>
   <project path="dalvik" name="platform/dalvik" remote="korg"/>
-  <project path="development" name="cvpcs/android_development" remote="github"/>
-
+  <project path="development" name="platform/development" remote="korg"/>
+  <!--> <project path="development" name="cvpcs/android_development" revision="android-2.1_r2.1s-sapphire" remote="github"/> <-->
+  <project path="device/cvpcs" name="cvpcs/android_device_cvpcs" remote="github"/>
   <project path="device/common" name="device/common" remote="korg"/>
   <project path="device/htc/common" name="device/htc/common" remote="korg"/>
   <project path="device/htc/dream" name="device/htc/dream" remote="korg"/>
@@ -34,7 +35,7 @@
 
   <project path="external/apache-http" name="platform/external/apache-http" remote="korg"/>
   <project path="external/astl" name="platform/external/astl" remote="korg"/>
-  <project path="external/bash" name="cvpcs/android_external_bash" remote="github" />
+  <project path="external/bash" name="cvpcs/android_external_bash" revision="bash-4.1-froyo" remote="github" />
   <project path="external/bison" name="platform/external/bison" remote="korg"/>
   <project path="external/blktrace" name="platform/external/blktrace" remote="korg"/>
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" remote="korg"/>
@@ -74,10 +75,10 @@
   <project path="external/jsr305" name="platform/external/jsr305" remote="korg"/>
   <project path="external/junit" name="platform/external/junit" remote="korg"/>
   <project path="external/kernel-headers" name="platform/external/kernel-headers" remote="korg"/>
-  <project path="external/knock" name="cvpcs/android_external_knock" remote="github" />
+  <project path="external/knock" name="cvpcs/android_external_knock" revision="knock-0.5-froyo" remote="github" />
   <project path="external/libc-ext" name="cvpcs/android_external_libc-ext" remote="github" />
   <project path="external/libffi" name="platform/external/libffi" remote="korg"/>
-  <project path="external/libncurses" name="cvpcs/android_external_libncurses" remote="github" />
+  <project path="external/libncurses" name="cvpcs/android_external_libncurses" revision="libncurses-5.7-froyo" remote="github" />
   <project path="external/libpcap" name="platform/external/libpcap" remote="korg"/>
   <project path="external/libpng" name="platform/external/libpng" remote="korg"/>
   <project path="external/libxml2" name="platform/external/libxml2" remote="korg"/>
@@ -85,8 +86,9 @@
   <project path="external/netcat" name="platform/external/netcat" remote="korg"/>
   <project path="external/netperf" name="platform/external/netperf" remote="korg"/>
   <project path="external/neven" name="platform/external/neven" remote="korg"/>
-  <project path="external/nano" name="cvpcs/android_external_nano" remote="github" />
-  <project path="external/opencore" name="cvpcs/android_external_opencore" remote="github"/>
+  <project path="external/nano" name="cvpcs/android_external_nano" revision="nano-2.2.4-froyo" remote="github" />
+  <project path="external/opencore" name="platform/external/opencore" remote="korg"/>
+  <!--> <project path="external/opencore" name="cvpcs/android_external_opencore" revision="android-2.1_r2.1s-sapphire" remote="github"/> <-->
   <project path="external/openssl" name="platform/external/openssl" remote="korg"/>
   <project path="external/oprofile" name="platform/external/oprofile" remote="korg"/>
   <project path="external/ping" name="platform/external/ping" remote="korg"/>
@@ -109,18 +111,20 @@
   <project path="external/tinyxml" name="platform/external/tinyxml" remote="korg"/>
   <project path="external/tremolo" name="platform/external/tremolo" remote="korg"/>
   <project path="external/v8" name="platform/external/v8" remote="korg"/>
-  <project path="external/vixie-cron" name="cvpcs/android_external_vixie-cron" remote="github" />
-  <project path="external/webkit" name="cvpcs/android_external_webkit" remote="github"/>
+  <project path="external/vixie-cron" name="cvpcs/android_external_vixie-cron" revision="vixie-cron-4.1-froyo" remote="github" />
+  <project path="external/webkit" name="platform/external/webkit" remote="korg"/>
+  <!--><project path="external/webkit" name="cvpcs/android_external_webkit" revision="android-2.1_r2.1s-sapphire" remote="github"/> <-->
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" remote="korg"/>
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" remote="korg"/>
   <project path="external/xmlwriter" name="platform/external/xmlwriter" remote="korg"/>
   <project path="external/yaffs2" name="platform/external/yaffs2" remote="korg"/>
   <project path="external/zlib" name="platform/external/zlib" remote="korg"/>
-
-  <project path="frameworks/base" name="cvpcs/android_frameworks_base" remote="github"/>
+  <project path="frameworks/base" name="platform/frameworks/base" remote="korg"/>
+  <!--><project path="frameworks/base" name="cvpcs/android_frameworks_base" revision="android-2.1_r2.1s-sapphire" remote="github"/> <-->
   <project path="frameworks/ex" name="platform/frameworks/ex" remote="korg"/>
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" remote="korg"/>
-  <project path="frameworks/policies/base" name="cvpcs/android_frameworks_policies_base" remote="github"/>
+  <project path="frameworks/policies/base" name="platform/frameworks/policies/base" remote="korg"/>
+  <!--><project path="frameworks/policies/base" name="cvpcs/android_frameworks_policies_base" revision="android-2.1_r2.1s-sapphire" remote="github"/><-->
 
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" remote="korg"/>
   <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="korg"/>
@@ -168,7 +172,8 @@
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" remote="korg"/>
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" remote="korg"/>
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" remote="korg"/>
-  <project path="packages/providers/DownloadProvider" name="cvpcs/android_packages_providers_DownloadProvider" remote="github"/>
+  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" remote="korg"/>
+  <!--> <project path="packages/providers/DownloadProvider" name="cvpcs/android_packages_providers_DownloadProvider" revision="android-2.1_r2.1s-sapphire" remote="github"/> <-->
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" remote="korg"/>
   <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" remote="korg"/>
   <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" remote="korg"/>
@@ -184,7 +189,7 @@
   <project path="system/bluetooth" name="platform/system/bluetooth" remote="korg"/>
   <project path="system/core" name="platform/system/core" remote="korg"/>
   <project path="system/extras" name="platform/system/extras" remote="korg"/>
-  <project path="system/netd" name="cvpcs/android_system_extras" remote="github"/>
+  <project path="system/netd" name="cvpcs/android_system_extras" revision="froyo-sapphire" remote="github"/>
   <project path="system/vold" name="platform/system/vold" remote="korg"/>
   <project path="system/wlan/ti" name="platform/system/wlan/ti" remote="korg"/>
 
