@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="korg"
+           fetch="git://android.git.kernel.org/"
+           review="review.source.android.com" />
+  <default revision="froyo"
+           remote="korg" />
+
+  <project path="build" name="platform/build" remote="korg">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project path="bionic" name="platform/bionic" remote="korg"/>
+
+  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" remote="korg"/>
+  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" remote="korg"/>
+  <project path="bootable/recovery" name="platform/bootable/recovery" remote="korg"/>
+
+  <project path="cts" name="platform/cts" remote="korg"/>
+  <project path="dalvik" name="platform/dalvik" remote="korg"/>
+  <project path="development" name="platform/development" remote="korg"/>
+
+  <project path="device/common" name="device/common" remote="korg"/>
+  <project path="device/htc/common" name="device/htc/common" remote="korg"/>
+  <project path="device/htc/dream" name="device/htc/dream" remote="korg"/>
+  <project path="device/htc/dream-sapphire" name="device/htc/dream-sapphire" remote="korg"/>
+  <project path="device/htc/passion" name="device/htc/passion" remote="korg"/>
+  <project path="device/htc/passion-common" name="device/htc/passion-common" remote="korg"/>
+  <project path="device/htc/sapphire" name="device/htc/sapphire" remote="korg"/>
+  <project path="device/sample" name="device/sample" remote="korg"/>
+
+  <project path="external/apache-http" name="platform/external/apache-http" remote="korg"/>
+  <project path="external/astl" name="platform/external/astl" remote="korg"/>
+  <project path="external/bison" name="platform/external/bison" remote="korg"/>
+  <project path="external/blktrace" name="platform/external/blktrace" remote="korg"/>
+  <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" remote="korg"/>
+  <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" remote="korg"/>
+  <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" remote="korg"/>
+  <project path="external/bsdiff" name="platform/external/bsdiff" remote="korg"/>
+  <project path="external/bzip2" name="platform/external/bzip2" remote="korg"/>
+  <project path="external/clearsilver" name="platform/external/clearsilver" remote="korg"/>
+  <project path="external/dbus" name="platform/external/dbus" remote="korg"/>
+  <project path="external/dhcpcd" name="platform/external/dhcpcd" remote="korg"/>
+  <project path="external/dnsmasq" name="platform/external/dnsmasq" remote="korg"/>
+  <project path="external/dropbear" name="platform/external/dropbear" remote="korg"/>
+  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" remote="korg"/>
+  <project path="external/easymock" name="platform/external/easymock" remote="korg"/>
+  <project path="external/elfcopy" name="platform/external/elfcopy" remote="korg"/>
+  <project path="external/elfutils" name="platform/external/elfutils" remote="korg"/>
+  <project path="external/embunit" name="platform/external/embunit" remote="korg"/>
+  <project path="external/emma" name="platform/external/emma" remote="korg"/>
+  <project path="external/esd" name="platform/external/esd" remote="korg"/>
+  <project path="external/expat" name="platform/external/expat" remote="korg"/>
+  <project path="external/fdlibm" name="platform/external/fdlibm" remote="korg"/>
+  <project path="external/freetype" name="platform/external/freetype" remote="korg"/>
+  <project path="external/fsck_msdos" name="platform/external/fsck_msdos" remote="korg"/>
+  <project path="external/genext2fs" name="platform/external/genext2fs" remote="korg"/>
+  <project path="external/giflib" name="platform/external/giflib" remote="korg"/>
+  <project path="external/grub" name="platform/external/grub" remote="korg"/>
+  <project path="external/gtest" name="platform/external/gtest" remote="korg"/>
+  <project path="external/guava" name="platform/external/guava" remote="korg"/>
+  <project path="external/icu4c" name="platform/external/icu4c" remote="korg"/>
+  <project path="external/iproute2" name="platform/external/iproute2" remote="korg"/>
+  <project path="external/ipsec-tools" name="platform/external/ipsec-tools" remote="korg"/>
+  <project path="external/iptables" name="platform/external/iptables" remote="korg"/>
+  <project path="external/jdiff" name="platform/external/jdiff" remote="korg"/>
+  <project path="external/jhead" name="platform/external/jhead" remote="korg"/>
+  <project path="external/jpeg" name="platform/external/jpeg" remote="korg"/>
+  <project path="external/jsr305" name="platform/external/jsr305" remote="korg"/>
+  <project path="external/junit" name="platform/external/junit" remote="korg"/>
+  <project path="external/kernel-headers" name="platform/external/kernel-headers" remote="korg"/>
+  <project path="external/libffi" name="platform/external/libffi" remote="korg"/>
+  <project path="external/libpcap" name="platform/external/libpcap" remote="korg"/>
+  <project path="external/libpng" name="platform/external/libpng" remote="korg"/>
+  <project path="external/libxml2" name="platform/external/libxml2" remote="korg"/>
+  <project path="external/mtpd" name="platform/external/mtpd" remote="korg"/>
+  <project path="external/netcat" name="platform/external/netcat" remote="korg"/>
+  <project path="external/netperf" name="platform/external/netperf" remote="korg"/>
+  <project path="external/neven" name="platform/external/neven" remote="korg"/>
+  <project path="external/opencore" name="platform/external/opencore" remote="korg"/>
+  <project path="external/openssl" name="platform/external/openssl" remote="korg"/>
+  <project path="external/oprofile" name="platform/external/oprofile" remote="korg"/>
+  <project path="external/ping" name="platform/external/ping" remote="korg"/>
+  <project path="external/ppp" name="platform/external/ppp" remote="korg"/>
+  <project path="external/proguard" name="platform/external/proguard" remote="korg"/>
+  <project path="external/qemu" name="platform/external/qemu"  revision="tools_r6" remote="korg"/>
+  <project path="external/quake" name="platform/external/quake" remote="korg"/>
+  <project path="external/safe-iop" name="platform/external/safe-iop" remote="korg"/>
+  <project path="external/skia" name="platform/external/skia" remote="korg"/>
+  <project path="external/sonivox" name="platform/external/sonivox" remote="korg"/>
+  <project path="external/speex" name="platform/external/speex" remote="korg"/>
+  <project path="external/sqlite" name="platform/external/sqlite" remote="korg"/>
+  <project path="external/srec" name="platform/external/srec" remote="korg"/>
+  <project path="external/stlport" name="platform/external/stlport" remote="korg"/>
+  <project path="external/strace" name="platform/external/strace" remote="korg"/>
+  <project path="external/svox" name="platform/external/svox" remote="korg"/>
+  <project path="external/tagsoup" name="platform/external/tagsoup" remote="korg"/>
+  <project path="external/tcpdump" name="platform/external/tcpdump" remote="korg"/>
+  <project path="external/tinyxml" name="platform/external/tinyxml" remote="korg"/>
+  <project path="external/tremolo" name="platform/external/tremolo" remote="korg"/>
+  <project path="external/v8" name="platform/external/v8" remote="korg"/>
+  <project path="external/webkit" name="platform/external/webkit" remote="korg"/>
+  <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" remote="korg"/>
+  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" remote="korg"/>
+  <project path="external/xmlwriter" name="platform/external/xmlwriter" remote="korg"/>
+  <project path="external/yaffs2" name="platform/external/yaffs2" remote="korg"/>
+  <project path="external/zlib" name="platform/external/zlib" remote="korg"/>
+
+  <project path="frameworks/base" name="platform/frameworks/base" remote="korg"/>
+  <project path="frameworks/ex" name="platform/frameworks/ex" remote="korg"/>
+  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" remote="korg"/>
+  <project path="frameworks/policies/base" name="platform/frameworks/policies/base" remote="korg"/>
+
+  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" remote="korg"/>
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="korg"/>
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="korg"/>
+  <project path="hardware/msm7k" name="platform/hardware/msm7k" remote="korg"/>
+  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" remote="korg"/>
+  <project path="hardware/ril" name="platform/hardware/ril" remote="korg"/>
+  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" remote="korg"/>
+  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" remote="korg"/>
+
+  <project path="ndk" name="platform/ndk" remote="korg"/>
+
+  <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" remote="korg"/>
+  <project path="packages/apps/AlarmClock" name="platform/packages/apps/AlarmClock" remote="korg"/>
+  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" remote="korg"/>
+  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" remote="korg"/>
+  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" remote="korg"/>
+  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" remote="korg"/>
+  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" remote="korg"/>
+  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" remote="korg"/>
+  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" remote="korg"/>
+  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" remote="korg"/>
+  <project path="packages/apps/Email" name="platform/packages/apps/Email" remote="korg"/>
+  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" remote="korg"/>
+  <project path="packages/apps/Gallery3D" name="platform/packages/apps/Gallery3D" remote="korg"/>
+  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" remote="korg"/>
+  <project path="packages/apps/IM" name="platform/packages/apps/IM" remote="korg"/>
+  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" remote="korg"/>
+  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" remote="korg"/>
+  <project path="packages/apps/Music" name="platform/packages/apps/Music" remote="korg"/>
+  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" remote="korg"/>
+  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" remote="korg"/>
+  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" remote="korg"/>
+  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" remote="korg"/>
+  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" remote="korg"/>
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="korg"/>
+  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" remote="korg"/>
+  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" remote="korg"/>
+  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" remote="korg"/>
+  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" remote="korg"/>
+  <project path="packages/experimental" name="platform/packages/experimental" remote="korg"/>
+  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" remote="korg"/>
+  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" remote="korg"/>
+  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" remote="korg"/>
+  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" remote="korg"/>
+  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" remote="korg"/>
+  <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" remote="korg"/>
+  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" remote="korg"/>
+  <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" remote="korg"/>
+  <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" remote="korg"/>
+  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" remote="korg"/>
+  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" remote="korg"/>
+  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" remote="korg"/>
+  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" remote="korg"/>
+  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" remote="korg"/>
+  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" remote="korg"/>
+  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" remote="korg"/>
+
+  <project path="prebuilt" name="platform/prebuilt" remote="korg"/>
+  <project path="sdk" name="platform/sdk"  revision="tools_r6" remote="korg"/>
+  <project path="system/bluetooth" name="platform/system/bluetooth" remote="korg"/>
+  <project path="system/core" name="platform/system/core" remote="korg"/>
+  <project path="system/extras" name="platform/system/extras" remote="korg"/>
+  <project path="system/netd" name="platform/system/netd" remote="korg"/>
+  <project path="system/vold" name="platform/system/vold" remote="korg"/>
+  <project path="system/wlan/ti" name="platform/system/wlan/ti" remote="korg"/>
+
+</manifest>

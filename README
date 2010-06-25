@@ -1,0 +1,16 @@
+To initialize get started with Android/CVPCS, you'll need to get
+familiar with Git and Repo.
+
+http://source.android.com/download/using-repo
+
+To initialize your local repository using the CVPCS trees,
+use a command like this:
+
+repo init -u git://github.com/camperdave/android_cvpcs_repo.git
+
+Then to sync up:
+
+repo sync
+
+
+
